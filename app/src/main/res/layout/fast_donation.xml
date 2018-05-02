@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imgBtn_urgentNeeds"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:background="@color/colorSecondary"
+            android:backgroundTint="@android:color/background_light"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/urgent_donation_icon" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_fastDonation"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="103dp"
+            android:background="@color/colorSecondary"
+            android:backgroundTint="@android:color/background_light"
+            android:paddingLeft="12dp"
+            android:paddingTop="7dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtn_reccurDonation"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_urgentNeeds"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fast_donation_icon" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_reccurDonation"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="126dp"
+            android:background="@color/colorSecondary"
+            android:backgroundTint="@android:color/background_light"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/recurring_donation_icon"
+            tools:layout_editor_absoluteX="215dp" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_userProfile"
+            android:layout_width="29dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorSecondary"
+            android:backgroundTint="@android:color/background_light"
+            android:paddingTop="13dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.619"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_reccurDonation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tV_heading"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_dark"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="CHOOSE A CATEGORY"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+    <Button
+        android:id="@+id/category_btn"
+        android:layout_width="448dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="CLOTHING"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tV_heading"
+        tools:ignore="MissingConstraints" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_cat_clothing"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/category_clothing"-->
+            <!--android:text="CLOTHING"-->
+            <!--android:textColor="@android:color/background_light"-->
+            <!--android:textSize="40sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/tV_heading"-->
+            <!--tools:ignore="MissingConstraints" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_cat_hygiene"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/category_hygiene"-->
+            <!--android:text="HYGIENE"-->
+            <!--android:textColor="@android:color/background_light"-->
+            <!--android:textSize="40sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/btn_cat_clothing" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_cat_can_goods"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:background="@drawable/category_relief_goods"-->
+            <!--android:text="CAN GOODS"-->
+            <!--android:textColor="@android:color/background_light"-->
+            <!--android:textSize="40sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/btn_cat_hygiene" />-->
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
